@@ -21,13 +21,15 @@ The CI/CD pipeline automatically builds and pushes Docker images
 These images can be instantly pulled and deployed across any environment or server
 
 # 🧰 Tech Stack & Tools
-Tool / Tech	Purpose
-HTML, CSS, JS	Lightweight frontend (no frameworks)
-Node.js (Express)	Backend logic for the guessing game
-Docker	Containerize backend and frontend
-Docker Compose	Run multi-container app locally
-Docker Hub	Store & distribute container images
-GitHub Actions	Automate CI/CD process
+| Tool / Tech           | Purpose                              |
+| --------------------- | ------------------------------------ |
+| **HTML, CSS, JS**     | Lightweight frontend (no frameworks) |
+| **Node.js (Express)** | Backend logic for the guessing game  |
+| **Docker**            | Containerize backend and frontend    |
+| **Docker Compose**    | Run multi-container app locally      |
+| **Docker Hub**        | Store & distribute container images  |
+| **GitHub Actions**    | Automate CI/CD process               |
+
 
 # ✨ Key Features
 ✅ GitHub Actions for CI/CD: Auto-build and push Docker images on each commit to main
@@ -97,11 +99,13 @@ docker run -p 3000:80 sakthi05/guess-game-frontend
 
 
 # 🌐 Real-World Use Case & Benefits
-Scenario	Value Delivered
-Frequent code updates	Auto-build & deploy – no manual steps
-Shared dev/testing environments	Consistent images from Docker Hub
-Faster feedback loop	Changes visible immediately after push
-Learning DevOps practices	Hands-on CI/CD pipeline & containerization
+| Scenario                        | Value Delivered                            |
+| ------------------------------- | ------------------------------------------ |
+| Frequent code updates           | Auto-build & deploy – no manual steps      |
+| Shared dev/testing environments | Consistent images from Docker Hub          |
+| Faster feedback loop            | Changes visible immediately after push     |
+| Learning DevOps practices       | Hands-on CI/CD pipeline & containerization |
+
 
 # ✅ Outcomes
 🚀 Hands-on with end-to-end DevOps lifecycle
