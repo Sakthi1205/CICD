@@ -1,8 +1,11 @@
-FROM node:18
-WORKDIR /app
-COPY . .
-RUN npm install
-RUN npm run build
-RUN npm install -g serve
+# Use the official Nginx image
+FROM nginx:alpine
+
+# Copy static files to Nginx's public directory
+COPY . /usr/share/nginx/html
+
+# Expose port 80 (default Nginx port)
 EXPOSE 80
-CMD ["serve", "-s", "build"]
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
