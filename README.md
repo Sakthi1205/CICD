@@ -60,18 +60,3 @@ guess-game/
 │
 └── docker-compose.yml        # Compose file to run both services
 
-🚀 Running Locally
-# Build the Docker image
-docker build -t your-app-name .
-
-# Run the container
-docker run -p 8080:80 your-app-name
-
-🌐 Real-World Use Case
-In companies like Amazon, Swiggy, or Zomato, such CI/CD pipelines are used to:
-
-Push feature updates quickly
-
-Automate testing and deployment
-
-Maintain uptime with safe rollbacks
