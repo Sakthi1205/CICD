@@ -79,8 +79,8 @@ SSH and redeploy on production server
 
 # 🐳 Docker Usage
 **Run Locally with Docker Compose**
-docker-compose down         # Stop & remove previous containers
-docker-compose up --build   # Build & start fresh containers
+docker-compose down
+docker-compose up --build
 
 **Git changes**
 git status
@@ -88,14 +88,13 @@ git add .
 git commit -m "Updated game logic message responses"
 git push
 
-**Use on Any Device (After Push)**
-**Backend**
+**Pull and run images elsewhere**
 docker pull sakthi05/guess-game-backend
 docker run -p 5000:5000 sakthi05/guess-game-backend
 
-Frontend**
 docker pull sakthi05/guess-game-frontend
 docker run -p 3000:80 sakthi05/guess-game-frontend
+
 
 # 🌐 Real-World Use Case & Benefits
 Scenario	Value Delivered
