@@ -1,7 +1,7 @@
-🚀 CI/CD Pipeline for Web Application using GitHub Actions & Docker
+**🚀 CI/CD Pipeline for Web Application using GitHub Actions & Docker**
 This project showcases a complete DevOps workflow by implementing a CI/CD pipeline for a simple guessing game web app. It automates the process of building, containerizing, and deploying using GitHub Actions, Docker, and Docker Hub.
 
-🎯 Purpose of the Project (From a Company/Team Perspective)
+**🎯 Purpose of the Project (From a Company/Team Perspective)**
 In real-world software teams, automation is essential to:
 
 Accelerate software delivery
@@ -20,7 +20,7 @@ The CI/CD pipeline automatically builds and pushes Docker images
 
 These images can be instantly pulled and deployed across any environment or server
 
-🧰 Tech Stack & Tools
+**🧰 Tech Stack & Tools**
 Tool / Tech	Purpose
 HTML, CSS, JS	Lightweight frontend (no frameworks)
 Node.js (Express)	Backend logic for the guessing game
@@ -29,7 +29,7 @@ Docker Compose	Run multi-container app locally
 Docker Hub	Store & distribute container images
 GitHub Actions	Automate CI/CD process
 
-✨ Key Features
+**✨ Key Features**
 ✅ GitHub Actions for CI/CD: Auto-build and push Docker images on each commit to main
 
 🐳 Dockerized Services: Ensures consistent runtime across all environments
@@ -40,10 +40,10 @@ GitHub Actions	Automate CI/CD process
 
 🔧 Modular Architecture: Backend and frontend can be scaled or modified independently
 
-## 📂 Folder Structure
+**📂 Folder Structure**
 <img width="678" height="337" alt="image" src="https://github.com/user-attachments/assets/c7c9cab1-12fb-4b34-9063-c01844d96db0" />
 
-🚀 Workflow: How It Works
+**🚀 Workflow: How It Works**
 User opens the guessing game in a browser.
 
 Enters a number → frontend sends it to backend API.
@@ -58,7 +58,7 @@ Correct! 🎉
 
 Responses are displayed dynamically via JavaScript frontend.
 
-🧪 CI/CD Pipeline with GitHub Actions
+**🧪 CI/CD Pipeline with GitHub Actions**
 Trigger: Push to main branch
 
 Actions:
@@ -75,30 +75,12 @@ sakthi05/guess-game-frontend
 
 sakthi05/guess-game-backend
 
-(Optional) SSH and redeploy on production server
+SSH and redeploy on production server
 
-🐳 Docker Usage
-Run Locally with Docker Compose
-bash
-Copy code
+**🐳 Docker Usage**
+# Run Locally with Docker Compose
 docker-compose down         # Stop & remove previous containers
 docker-compose up --build   # Build & start fresh containers
-Use on Any Device (After Push)
-bash
-Copy code
-# Backend
-docker pull sakthi05/guess-game-backend
-docker run -p 5000:5000 sakthi05/guess-game-backend
-
-# Frontend
-docker pull sakthi05/guess-game-frontend
-docker run -p 3000:80 sakthi05/guess-game-frontend
-🔁 Commands Used During Deployment
-bash
-Copy code
-# Stop previous containers and rebuild
-docker-compose down
-docker-compose up --build
 
 # Git changes
 git status
@@ -106,20 +88,23 @@ git add .
 git commit -m "Updated game logic message responses"
 git push
 
-# Pull and run images elsewhere
+# Use on Any Device (After Push)
+# Backend
 docker pull sakthi05/guess-game-backend
 docker run -p 5000:5000 sakthi05/guess-game-backend
 
+# Frontend
 docker pull sakthi05/guess-game-frontend
 docker run -p 3000:80 sakthi05/guess-game-frontend
-🌐 Real-World Use Case & Benefits
+
+**🌐 Real-World Use Case & Benefits**
 Scenario	Value Delivered
 Frequent code updates	Auto-build & deploy – no manual steps
 Shared dev/testing environments	Consistent images from Docker Hub
 Faster feedback loop	Changes visible immediately after push
 Learning DevOps practices	Hands-on CI/CD pipeline & containerization
 
-✅ Outcomes
+**✅ Outcomes**
 🚀 Hands-on with end-to-end DevOps lifecycle
 
 👨‍💻 Built confidence in Docker, Docker Compose & GitHub Actions
