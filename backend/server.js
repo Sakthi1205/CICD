@@ -17,7 +17,7 @@ app.post('/guess', (req, res) => {
     res.json({ message: 'Too high! Try again.' });
   } else {
     numberToGuess = Math.floor(Math.random() * 100) + 1; // reset for next round
-    res.json({ message: '🎉 Correct! A new sakthi number has been generated.' });
+    res.json({ message: '🎉 Correct! A new number has been generated.' });
   }
 });
 
