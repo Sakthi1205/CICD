@@ -38,4 +38,40 @@ This reduces manual errors, speeds up the delivery process, and mimics real-worl
 ---
 
 ## 📂 Folder Structure
+guess-game/
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml        # GitHub Actions for CI/CD
+│
+├── backend/
+│   ├── Dockerfile            # Backend Dockerfile
+│   ├── .dockerignore
+│   ├── server.js             # Node.js backend logic
+│   ├── package.json
+│   └── package-lock.json
+│
+├── frontend/
+│   ├── Dockerfile            # Frontend Dockerfile (HTML/CSS/JS)
+│   ├── .dockerignore
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+│
+└── docker-compose.yml        # Compose file to run both services
 
+🚀 Running Locally
+# Build the Docker image
+docker build -t your-app-name .
+
+# Run the container
+docker run -p 8080:80 your-app-name
+
+🌐 Real-World Use Case
+In companies like Amazon, Swiggy, or Zomato, such CI/CD pipelines are used to:
+
+Push feature updates quickly
+
+Automate testing and deployment
+
+Maintain uptime with safe rollbacks
