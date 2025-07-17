@@ -1,4 +1,4 @@
-#🚀 CI/CD Pipeline for Web Application using GitHub Actions & Docker
+# 🚀 CI/CD Pipeline for Web Application using GitHub Actions & Docker
 This project showcases a complete DevOps workflow by implementing a CI/CD pipeline for a simple guessing game web app. It automates the process of building, containerizing, and deploying using GitHub Actions, Docker, and Docker Hub.
 
 # 🎯 Purpose of the Project (From a Company/Team Perspective)
