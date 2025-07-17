@@ -12,7 +12,7 @@ Minimize human errors
 
 Allow seamless collaboration across teams
 
-This project simulates a production-grade workflow where:
+**This project simulates a production-grade workflow where:**
 
 Developers push code to GitHub
 
@@ -61,9 +61,10 @@ Correct! 🎉
 Responses are displayed dynamically via JavaScript frontend.
 
 # 🧪 CI/CD Pipeline with GitHub Actions
-Trigger: Push to main branch
+**Trigger:** 
+Push to main branch
 
-Actions:
+**Actions:**
 
 Checkout code
 
@@ -71,7 +72,7 @@ Build Docker images for both frontend and backend
 
 Log in to Docker Hub
 
-Push updated images:
+**Push updated images:**
 
 sakthi05/guess-game-frontend
 
@@ -116,6 +117,6 @@ docker run -p 3000:80 sakthi05/guess-game-frontend
 
 📦 Published to Docker Hub:
 
-sakthi05/guess-game-frontend
+-sakthi05/guess-game-frontend
 
-sakthi05/guess-game-backend
+-sakthi05/guess-game-backend
