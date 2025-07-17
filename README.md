@@ -84,21 +84,32 @@ SSH and redeploy on production server
 **Run Locally with Docker Compose**
 
 docker-compose down
+
 docker-compose up --build
 
 **Git changes**
 
 git status
+
 git add .
+
 git commit -m "Updated game logic message responses"
+
 git push
+
 
 **Pull and run images elsewhere**
 
+**Backend**
+
 docker pull sakthi05/guess-game-backend
+
 docker run -p 5000:5000 sakthi05/guess-game-backend
 
+**Frontend**
+
 docker pull sakthi05/guess-game-frontend
+
 docker run -p 3000:80 sakthi05/guess-game-frontend
 
 
