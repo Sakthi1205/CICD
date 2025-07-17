@@ -12,9 +12,9 @@ app.post('/guess', (req, res) => {
   const userGuess = req.body.guess;
 
   if (userGuess < numberToGuess) {
-    res.json({ message: 'Too low! Try again.' });
+    res.json({ message: 'Too low! Try again You can.' });
   } else if (userGuess > numberToGuess) {
-    res.json({ message: 'Too high! Try again.' });
+    res.json({ message: 'Too high! Try again You can.' });
   } else {
     numberToGuess = Math.floor(Math.random() * 100) + 1; // reset for next round
     res.json({ message: '🎉 Correct! A new number has been generated.' });
